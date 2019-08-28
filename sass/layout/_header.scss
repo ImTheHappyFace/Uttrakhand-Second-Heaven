@@ -1,0 +1,32 @@
+/* 1- Logo and image . 
+        Image Used - Logo white and backgroung image yoga karte hue
+         */
+
+
+         header{
+            height: 95vh;
+            background-image:linear-gradient(to bottom right, rgba(31, 162, 255, 0.842)
+            ,rgba(18, 215, 250, 0.548),rgba(166, 255, 203, 0.575)), url(../img/Uttrakhand1.jpg);
+            background-size: cover;
+            background-position: top;
+            /* display: flex;
+            flex-wrap: wrap; */
+            clip-path: polygon(0 0,100% 0,100% 80%,0 95%);
+           
+        
+        }
+        
+        .logo-box{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+        
+        .logo{
+            height: 85px;
+        }
+
+
+
+        // background-image:linear-gradient(to left top,rgba(22, 160, 132, 0.795),rgba(244, 208, 63, 0.836)), url(../img/Uttrakhand1.jpg);
+       // background-size: cover;

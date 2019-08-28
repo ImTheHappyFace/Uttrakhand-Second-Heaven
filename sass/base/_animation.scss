@@ -1,0 +1,48 @@
+/* Animations at the headings */
+
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+    50%{
+        transform: translateX(20px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px)
+
+    }
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px)
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px)
+
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px)
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
+
+    }
+}

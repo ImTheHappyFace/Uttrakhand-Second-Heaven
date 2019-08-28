@@ -1,0 +1,66 @@
+.footer{
+   // background-image: linear-gradient(rgba(15, 32, 39, 0.562),rgba(32, 58, 67, 0.61),rgba(44, 83, 100, 0.719));
+   background-image: linear-gradient(to bottom, rgba(162, 31, 206, 0.658),#FAFFD1) ;
+   padding: 1rem 0;
+    font-size: 1.6rem;
+
+    &-logo-box{
+        text-align: center;
+        margin-bottom: 8rem;
+       
+
+    }
+
+    &-navigation, &-copyright{
+        padding: 4rem 0;
+
+    }
+    &-logo{
+        height: 20rem;
+        
+        
+
+    }
+
+    &-list{
+        list-style: none;
+
+    }
+
+    &-item{
+        display: inline-block;
+        border-top: 2px solid transparent;
+        transition: all 0.3s;
+
+        &:not(:last-child){
+            margin-right: 1.9rem;
+        }
+
+        &:hover{
+            border-top: 2px solid rgb(113, 216, 216);
+            transform: scale(1.2);
+
+        }
+
+    }
+    &-link{
+
+        &:link,
+        &:visited{
+            color: rgb(133, 136, 136);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        &:hover,
+        &:active{
+            color: rgb(113, 216, 216);
+        }
+
+    }
+    &-copyright{
+        color: rgb(133, 136, 136);
+        font-style: Bold;
+
+    }
+}

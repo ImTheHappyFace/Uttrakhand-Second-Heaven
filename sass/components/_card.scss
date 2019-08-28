@@ -1,0 +1,235 @@
+
+
+
+//Fuctionality
+
+.card{
+    perspective: 110rem;
+    position: relative;
+    height: 50rem;
+    
+
+    &-side{
+         background-color: orangered;
+         height: 50rem;
+         transition: all 0.8s ease;
+         position: absolute;
+         top: 0;
+         left: 0;
+         backface-visibility: hidden;
+         width: 100%;
+         overflow: hidden;
+         border-radius: 3px;
+         box-shadow: 0 2rem 3rem rgba($color-black,0.15);
+    
+    
+        &-front{
+            background-color: white;
+
+        }
+
+        &-back{
+             transform: rotateY(180deg);
+
+            &-1{
+             background-image: linear-gradient(to right bottom,
+              $color-secondary-light,
+              $color-secondary-dark);
+            }
+
+            &-2{
+                background-image: linear-gradient(to right bottom,$color-green1,$color-green2);
+
+            }
+            &-3{
+                background-image: linear-gradient(to right bottom,
+                $color-tertiary-light,
+                $color-tertiary-dark);
+
+            }
+
+        }
+    
+    
+        }
+
+    
+    
+    
+
+
+
+    &:hover &-side-front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &-side-back{
+        transform: rotateY(0);
+    }
+
+
+    &-picture{
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+        clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+        
+
+
+        &-1{
+            background-image: linear-gradient(to right bottom,
+             $color-secondary-light,
+             $color-secondary-dark), url(../img/nat-5.jpg);
+            
+        }
+
+        &-2{background-image: linear-gradient(to right bottom,
+            $color-green1,
+            $color-green2), url(../img/nat-6.jpg);
+             
+        }
+
+        &-3{
+            background-image: linear-gradient(to right bottom,
+            $color-tertiary-light,
+            $color-tertiary-dark), url(../img/nat-7.jpg);
+            
+        }
+    }
+
+    &-heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        position:absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+        width: 50%;
+
+        
+    }
+    &-heading-span{
+       
+            
+
+
+
+        &-1{
+            background-image: linear-gradient(to right bottom,
+            rgba($color-secondary-light,.85),
+            rgba($color-secondary-dark,.85));
+            
+
+        }
+        &-3{
+            background-image: linear-gradient(to right bottom,
+            rgba($color-tertiary-light,.85),
+            rgba($color-tertiary-dark,.85));
+
+        }
+        &-2{
+            background-image: linear-gradient(to right bottom,
+            rgba($color-green1,.85),
+            rgba($color-green2,.85));
+
+        }
+    }
+
+    &-details{
+
+        &-1{
+            background-image: linear-gradient(to right,$color-secondary-light,$color-secondary-dark);
+            -webkit-background-clip: text;
+            color: transparent;
+            
+
+        }
+        &-2{
+            background-image: linear-gradient(to right,$color-green1,$color-green2);
+            -webkit-background-clip: text;
+            color: transparent;
+
+        }
+        &-3{
+            background-image: linear-gradient(to right,$color-tertiary-light,$color-tertiary-dark);
+            -webkit-background-clip: text;
+            color: transparent;
+
+        }
+
+
+        ul{
+            width: 75%;
+            margin: 0 auto;
+        }
+        li{
+            text-decoration: underline;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 300;
+            padding: 1rem;
+           
+
+            &:not(:last-child){
+                border-bottom: 1px solid #eee;
+                
+                
+            }
+        }
+    }
+    &-cta{
+        position: absolute;
+        top: auto;
+        left:auto;
+        transform: translate(40%,100%);
+
+    }
+    &-price-box{
+        text-align: center;
+
+    }
+    &-price-value{
+        font-size: 180%;
+        color: #eee;
+        margin-bottom: 2rem;
+        margin-top: .5rem;
+
+    }
+    &-price-only{
+        font-size: 1.8rem;
+        color: #eee;
+        animation-name: moveInRight;
+        animation-duration: 2s;
+    }
+
+    }
+
+    .button-tour{
+        position: relative;
+
+        &-btn{
+            position:absolute;
+            left: 50rem;
+            background-image: linear-gradient(to right,$color-green1,$color-green2);
+            color: white;
+        
+
+        }
+    }
+
+
+    
+
+    
+
+
+
+
+
+
+
+ 
+
