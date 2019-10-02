@@ -423,7 +423,7 @@ body {
          */
 header {
   height: 95vh;
-  background-image: linear-gradient(to bottom right, rgba(31, 162, 255, 0.842), rgba(18, 215, 250, 0.548), rgba(166, 255, 203, 0.575)), url(../img/kasol.jpg);
+  background-image: linear-gradient(to bottom right, rgba(31, 162, 255, 0.842), rgba(18, 215, 250, 0.548), rgba(166, 255, 203, 0.575)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   /* display: flex;
